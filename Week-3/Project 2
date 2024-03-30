@@ -1,0 +1,117 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "479cc262-1849-4e6d-9f66-11943a42a671",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Welcome to the roots of equations calculator\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Which equation are you looking for 1 or 2 2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "For Quadratic Equation\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter A:  1\n",
+      "Enter B:  -2\n",
+      "Enter C:  -15\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "There will be 2 roots\n",
+      "The 1st root is:  5.0\n",
+      "The 2nd root is:  -3.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "def cubic_roots():\n",
+    "    a = int(input(\"Enter A: \"))\n",
+    "    b = int(input(\"Enter B: \"))\n",
+    "    c = int(input(\"Enter C: \"))\n",
+    "    d = int(input(\"Enter D: \"))\n",
+    "\n",
+    "    alpha = -b/a \n",
+    "    beta = c/a \n",
+    "    gamma = -d/a\n",
+    "    \n",
+    "    print(\"There will be 3 roots\")\n",
+    "    print(\"The 1st root is: \", alpha)\n",
+    "    print(\"The 2nd root is: \", beta)\n",
+    "    print(\"The 3rd root is: \", gamma)\n",
+    "\n",
+    "def quadratic_roots():\n",
+    "    a = int(input(\"Enter A: \"))\n",
+    "    b = int(input(\"Enter B: \"))\n",
+    "    c = int(input(\"Enter C: \"))\n",
+    "\n",
+    "    D = b**2 - 4 * a * c\n",
+    "    if D > 0:\n",
+    "      root_1 = (-b + (D**0.5)) / (2 * a)\n",
+    "      root_2 = (-b - ( D**0.5)) / (2 * a)\n",
+    "      print(\"There will be 2 roots\")\n",
+    "      print(\"The 1st root is: \", root_1)\n",
+    "      print(\"The 2nd root is: \", root_2)\n",
+    "    elif D == 0:\n",
+    "        root_1 = -b / (2 * a)\n",
+    "        print(\"The 1 and only root is: \", root_1)\n",
+    "    else:\n",
+    "        print(\"There are no roots\")\n",
+    "\n",
+    "print(\"Welcome to the roots of equations calculator\")\n",
+    "choice = int(input(\"Which equation are you looking for 1 or 2\"))\n",
+    "\n",
+    "if choice == 1:\n",
+    " print(\"For Cubic Equation\")\n",
+    " cubic_roots()\n",
+    "\n",
+    "if choice == 2:\n",
+    " print(\"For Quadratic Equation\")\n",
+    " quadratic_roots()"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
