@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 3,
+   "execution_count": 4,
    "id": "fce81cf2-151b-42b0-aa47-0b3ceeb70f3c",
    "metadata": {},
    "outputs": [],
@@ -90,6 +90,14 @@
     "\n",
     "root.mainloop()"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0cef87a4-3e8e-4eaa-a33c-f7ce7493a09b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
