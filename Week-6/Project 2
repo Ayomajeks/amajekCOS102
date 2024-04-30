@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 5,
    "id": "b806723b-a3d4-4592-b70c-5ac90f0aecdd",
    "metadata": {},
    "outputs": [
@@ -10,7 +10,8 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Admitted Candidates for Computer Science: [(256, 'Mathematics English Chemistry Physics Computer Science')]\n"
+      "Admitted Candidates for Computer Science: [(256, 'Mathematics English Chemistry Physics Computer Science')]\n",
+      "Not Admitted Candidates for Computer Science: [(230, 'Mathematics English Chemistry Physics Computer Science')]\n"
      ]
     }
    ],
@@ -18,7 +19,6 @@
     "import tkinter as tk\n",
     "from tkinter import messagebox\n",
     "\n",
-    "# Create main window\n",
     "root = tk.Tk()\n",
     "root.title(\"Admission Portal\")\n",
     "root.geometry(\"500x200\")\n",
@@ -31,7 +31,6 @@
     "    subjects = subjects_entry.get()\n",
     "    interview_pass = interviewpass_entry.get()\n",
     "\n",
-    "    # Check admission criteria for Computer Science department\n",
     "    if jamb_score >= 250 and all(subject in subjects for subject in ['Mathematics', 'English', 'Physics', 'Chemistry', 'Computer Science']) and interview_pass == \"Yes\":\n",
     "        admitted_compsci.append((jamb_score, subjects))\n",
     "        print(\"Admitted Candidates for Computer Science:\", admitted_compsci)\n",
@@ -61,14 +60,6 @@
     "\n",
     "root.mainloop()"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "d720cbb6-f95d-41a3-a936-4aa6f82653e3",
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {
